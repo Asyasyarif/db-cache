@@ -16,9 +16,9 @@ services:
       - "-c"
       - "max_connections=200"
       - "-c"
-      - "shared_buffers=2GB"
+      - "shared_buffers=1GB"
       - "-c"
-      - "effective_cache_size=6GB"
+      - "effective_cache_size=512MB"
       - "-c"
       - "maintenance_work_mem=512MB"
       - "-c"
@@ -34,9 +34,9 @@ services:
       - "-c"
       - "work_mem=6553kB"
       - "-c"
-      - "min_wal_size=1GB"
+      - "min_wal_size=512MB"
       - "-c"
-      - "max_wal_size=4GB"
+      - "max_wal_size=512MB"
 
   redis:
     image: redis:6
