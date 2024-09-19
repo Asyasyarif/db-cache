@@ -1,0 +1,34 @@
+# File konfigurasi lingkungan
+.env
+
+# Data Docker volume
+data/*
+!data/.gitignore
+
+# File log
+*.log
+
+# File temporary
+*.tmp
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
+
+# Direktori dependensi (jika ada)
+node_modules/
+vendor/
+
+# File kompilasi (jika ada)
+*.pyc
+*.class
+*.o
+
+# File backup
+*~
+*.bak
+
+# File IDE dan editor (sesuaikan dengan IDE yang Anda gunakan)
+.vscode/
+.idea/
+*.swp
