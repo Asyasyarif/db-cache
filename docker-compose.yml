@@ -12,11 +12,7 @@ services:
       PGTZ: Asia/Jakarta
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      # - ./postgress/postgresql.conf:/etc/postgresql/postgresql.conf
-    command:
-      - "postgres"
-      - "-c"
-      - "max_connections=200"
+      - ./config/postgres/postgresql.conf:/etc/postgresql/postgresql.conf
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
       interval: 30s
